@@ -9,6 +9,7 @@ import Sheets from "./pages/Sheets";
 import Playlist from "./pages/Playlist";
 import Resource from "./pages/Resource";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
           {/* <Route exact path="/playlists" element={<Playlists />} /> */}
           {/* <Route path="/playlist/:id" element={<Playlist />} /> */}
           <Route exact path="/resources" element={<Resources />} />
