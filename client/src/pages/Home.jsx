@@ -177,9 +177,6 @@ const Home = () => {
       </section>
 
 
-      {/* Playlist section Option2 */}
-
-
 
     </div>
   );
