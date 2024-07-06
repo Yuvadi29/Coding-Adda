@@ -3,6 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import { motion } from "framer-motion";
 import WidthLimiter from "./WidthLimiter";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isNavbarActive, setIsNavbarActive] = useState(false);
@@ -19,24 +20,26 @@ const Navbar = () => {
           </p>
         </div>
         <ul className="hidden text-sm sm:block">
-          <li className="ml-6 inline-block cursor-pointer hover:underline">
-            <a href="/">Home</a>
-          </li>
-          <li className="ml-6 inline-block cursor-pointer hover:underline">
-            Blogs
-          </li>
-          <li className="ml-6 inline-block cursor-pointer hover:underline">
-            <a href="/playlists">Playlists</a>
-          </li>
-          <li className="ml-6 inline-block cursor-pointer hover:underline">
-            <a href="/resources">Resources</a>
-          </li>
-          <li className="ml-6 inline-block cursor-pointer hover:underline">
-            <a href="/podcasts">Podcasts</a>
-          </li>
-          <li className="ml-6 inline-block cursor-pointer hover:underline">
-            <a href="/sheets">Sheets</a>
-          </li>
+          <header className="px-4 lg:px-6 h-14 flex items-center">
+            <Link href="#" className="flex items-center justify-center" prefetch={false}>
+              {/* <MountainIcon className="h-6 w-6" /> */}
+              <span className="sr-only">Acme Inc</span>
+            </Link>
+            <nav className="ml-auto flex gap-4 sm:gap-6">
+              <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+                Home
+              </Link>
+              <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+                Products
+              </Link>
+              <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+                About
+              </Link>
+              <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+                Contact
+              </Link>
+            </nav>
+          </header>
         </ul>
 
         <div className="text-[20px] sm:hidden">

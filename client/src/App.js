@@ -8,6 +8,7 @@ import Resources from "./pages/Resources";
 import Sheets from "./pages/Sheets";
 import Playlist from "./pages/Playlist";
 import Resource from "./pages/Resource";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
           {/* <Route exact path="/playlists" element={<Playlists />} /> */}
           {/* <Route path="/playlist/:id" element={<Playlist />} /> */}
           <Route exact path="/resources" element={<Resources />} />
