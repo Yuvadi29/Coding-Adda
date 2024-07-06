@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background: #161826;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-primary-1000 py-2 px-3 mt-5 text-sm md:text-lg rounded-md hover:bg-orange-500 capitalize;
+  }
+
+  .btn-secondary {
+    @apply inline-block bg-transparent border border-primary-1000 py-1 px-4 text-xs md:text-sm rounded-md hover:bg-orange-500 capitalize;
+  }
+}
